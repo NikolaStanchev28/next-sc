@@ -1,10 +1,10 @@
 {
   "name": "next-sc",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "bin": {
-    "create-boilerplate": "./generate-app.js"
+    "next-sc": "./generate-app.js"
   },
   "scripts": {
     "start": "parcel index.html",
