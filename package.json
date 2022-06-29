@@ -1,0 +1,29 @@
+{
+  "name": "next-sc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "create-boilerplate": "./generate-app.js"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikolaStanchev28/next-sc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikolaStanchev28/next-sc/issues"
+  },
+  "homepage": "https://github.com/NikolaStanchev28/next-sc#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
