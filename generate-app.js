@@ -1,6 +1,7 @@
-import { execSync } from "child_process";
-import * as path from "path";
-import * as fs from "fs";
+#!/usr/bin/env node
+const { execSync } = require("child_process");
+const path = require("path");
+const fs = require("fs");
 
 if (process.argv.length < 3) {
   console.log("You have to provide a name to your app.");
@@ -39,7 +40,6 @@ async function main() {
 
     console.log("Removing useless files");
     execSync("npx rimraf ./.git");
-    fs.rmdirSync(path.join(projectPath, "bin"), { recursive: true });
 
     console.log("The installation is done, your app is ready to use !");
   } catch (error) {
