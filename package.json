@@ -1,6 +1,6 @@
 {
   "name": "next-sc",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/NikolaStanchev28/next-sc#readme",
   "dependencies": {
+    "colors": "^1.4.0",
     "rimraf": "^3.0.2"
   }
 }
