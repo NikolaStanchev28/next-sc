@@ -45,7 +45,7 @@ async function main() {
     execSync(
       `git clone ${
         useNextjs13 ? `-b feature/update-to-nextjs-13 --single-branch` : ``
-      } ${gitRepo} ${projectPath}`
+      } ${gitRepo} "${projectPath}"`
     );
 
     process.chdir(projectPath);
