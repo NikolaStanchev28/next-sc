@@ -14,7 +14,7 @@ if (process.argv.length < 3) {
 const projectName = process.argv[2];
 const useNextjs13 = process.argv[3] === "--experimental";
 const currentPath = process.cwd();
-const projectPath = `"${path.join(currentPath, projectName)}"`;
+const projectPath = path.join(currentPath, projectName);
 const gitRepo = "https://github.com/NikolaStanchev28/vachev-sc-boilerplate.git";
 
 try {
@@ -29,7 +29,7 @@ try {
       )
     );
   } else {
-    console.log(red(error));
+    console.log(red(err));
   }
   process.exit(1);
 }
